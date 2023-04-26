@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		input[type="number"] {
+			padding: 5px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			margin-bottom: 10px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			padding: 5px 15px;
+			font-size: 16px;
+			border-radius: 5px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			cursor: pointer;
+			margin-bottom: 10px;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="num_iteraciones">Número de iteraciones:</label>
+		<input type="number" id="num_iteraciones" name="num_iteraciones" min="1" max="100" value="1">
+		<input type="submit" value="Ejecutar código">
+	</form>
+</body>
+</html>
